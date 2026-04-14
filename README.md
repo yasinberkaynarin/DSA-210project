@@ -3,13 +3,13 @@ Project Overview & Motivation
 
 The film industry has long been one of the most powerful and influential sectors in global entertainment. Every year, thousands of movies are released, yet only some of them manage to capture widespread audience attention and achieve lasting popularity. Understanding why certain movies become more popular than others is valuable not only for viewers, but also for producers, marketers, and analysts.
 
-This project was developed to explore the main factors that influence a movie’s popularity between 1980 and 2020. In particular, it focuses on whether popularity is driven more by financial investment, audience ratings, or content-related characteristics such as genre and runtime.
+This project was developed to explore the main factors that influence a movie’s popularity between 1980 and 2020. In particular, it focuses on whether popularity is driven more by financial investment, audience ratings, or content related characteristics such as genre and runtime.
 
-By using real-world movie data, the project aims to uncover patterns behind audience behavior and measure which variables had the strongest impact on popularity over time.
+By using real world movie data, the project aims to uncover patterns behind audience behavior and measure which variables had the strongest impact on popularity over time.
 
 Data Source: Where Did I Get This Data? 🌐
 
-The primary dataset was obtained from Kaggle and contains detailed information about movies released over several decades. It includes financial, descriptive, and audience-related variables that are suitable for statistical and predictive analysis.
+The primary dataset was obtained from Kaggle and contains detailed information about movies released over several decades. It includes financial, descriptive, and audience related variables that are suitable for statistical and predictive analysis.
 
 The original dataset contains the following attributes:
 
@@ -60,12 +60,12 @@ Hypotheses to Test 📊
 Budget and Popularity
 
 Null Hypothesis (H0): Budget has no significant effect on movie popularity.
-Alternative Hypothesis (H1): Higher-budget movies tend to be more popular.
+Alternative Hypothesis (H1): Higher budget movies tend to be more popular.
 
 Ratings and Popularity
 
 Null Hypothesis (H0): IMDb score has no significant effect on popularity.
-Alternative Hypothesis (H1): Higher-rated movies tend to be more popular.
+Alternative Hypothesis (H1): Higher rated movies tend to be more popular.
 
 Runtime and Popularity
 
