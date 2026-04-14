@@ -83,7 +83,7 @@ Movie popularity can be predicted using budget, genre, runtime, and rating varia
 
 Expected Results 📈
 
-It is expected that financial investment and audience ratings will have positive effects on popularity. Movies with larger budgets may attract wider audiences through stronger marketing and production quality, while highly rated movies may gain popularity through positive audience reception and word-of-mouth.
+It is expected that financial investment and audience ratings will have positive effects on popularity. Movies with larger budgets may attract wider audiences through stronger marketing and production quality, while highly rated movies may gain popularity through positive audience reception and word of mouth.
 
 It is also expected that some genres will perform better than others, depending on audience demand and market trends.
 
