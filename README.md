@@ -97,3 +97,35 @@ Matplotlib
 Seaborn
 SciPy
 Scikit-learn
+
+## Machine Learning
+
+A Linear Regression model was applied to predict movie popularity (measured by number of votes) using features such as budget, IMDb score, and runtime.
+
+The model performance was evaluated using Mean Squared Error (MSE) and R² score.
+
+- R² Score: ~0.36  
+- MSE: 21143358032.67
+
+The results indicate that the model is able to capture some of the variation in movie popularity, but not all. This suggests that while budget, score, and runtime have an influence, there are other important factors (such as marketing, cast, or release timing) that are not included in the model.
+
+The scatter plot of actual vs predicted values shows that the model captures the general trend, but predictions are not highly accurate.
+
+## Visualizations
+
+### Score Distribution
+![Score](score_distribution.png)
+
+### Budget vs Popularity
+![Budget](budget_vs_popularity.png)
+
+### ML Prediction (Actual vs Predicted)
+![ML](actual_vs_predicted.png)
+
+## Conclusion
+
+The analysis shows that both budget and IMDb score have a measurable impact on movie popularity. Hypothesis testing confirmed that high-budget movies tend to receive significantly more audience attention.
+
+However, the machine learning model achieved only moderate performance (R² ≈ 0.36), indicating that popularity cannot be fully explained by the selected variables alone.
+
+This suggests that external factors such as marketing strategies, star power, and release timing likely play an important role in determining a movie’s success.
