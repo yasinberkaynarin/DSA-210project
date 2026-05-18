@@ -1,57 +1,61 @@
-DSA-210 Project – Movie Budget and IMDb Rating Analysis
-Project Overview 🎬
+🎬📊 Movie Budget and IMDb Rating Analysis 🍿
+Project Overview & Motivation
 
-This project analyzes the relationship between movie budgets, IMDb ratings, and movie popularity using movie data between 1980 and 2020.
+Movies have always been one of the biggest parts of the entertainment industry, and I have always been curious about why some movies become extremely successful while others do not. As someone who enjoys watching movies and checking IMDb ratings regularly, I wanted to explore whether financial investment actually affects audience reception and movie success.
 
-The main goal of the project is to understand whether higher budget movies tend to receive better IMDb ratings and generate higher revenue. The project also explores how variables such as votes, runtime, and ratings relate to movie success.
+In this project, I analyzed movie data between 1980 and 2020 to understand the relationship between movie budgets, IMDb ratings, popularity, and revenue. I was especially interested in seeing whether bigger budgets lead to higher IMDb ratings or if audience satisfaction depends on other factors as well.
 
-Dataset 📂
+The goal of the project was to combine data analysis, visualization, and basic machine learning techniques to better understand movie success using real world movie data.
 
-The main dataset was obtained from Kaggle and includes information about movies such as:
+Data Source: Where did i get the data, How i collect it🌐
 
-Movie Title
-Genre
-Release Year
-IMDb Score
-Votes
-Budget
-Gross Revenue
-Runtime
+The main dataset used in this project was obtained from Kaggle and included information about movies such as:
 
-To improve the analysis, the dataset was enriched using IMDb official datasets:
+movie names
+genres
+release years
+IMDb scores
+vote counts
+budgets
+gross revenue
+runtime
+
+To improve the dataset, I also used IMDb official datasets:
 
 title.basics.tsv
 title.ratings.tsv
 
-Movies were matched using title and release year information. IMDb enrichment added:
+Using movie titles and release years, I matched the movies with IMDb data and added IMDb IDs, IMDb ratings, vote counts, and genres to the dataset.
 
-IMDb IDs
-IMDb ratings
-IMDb vote counts
-IMDb genres
-
-The enrichment process achieved approximately a 97% match rate.
+The IMDb enrichment process achieved approximately a 97% successful match rate.
 
 Data Analysis 🔍
 
-The project includes several stages of analysis:
+After cleaning and preprocessing the dataset, I performed several different analyses to better understand movie success and popularity.
 
-Data cleaning and preprocessing
-IMDb data enrichment
-Exploratory Data Analysis (EDA)
-Correlation analysis
-Hypothesis testing
-Basic machine learning modeling
+IMDb Enrichment
 
-Several visualizations were created to analyze the relationships between movie variables.
+The dataset was enriched using IMDb official data. I created a visualization to compare matched and unmatched movies after the enrichment process.
 
-Hypothesis Testing 📊
+Budget vs IMDb Rating
 
-The project tested whether higher budget movies tend to receive higher IMDb ratings and popularity.
+Using scatter plots, I analyzed the relationship between movie budgets and IMDb ratings.
 
-Movies were divided into high budget and low budget groups, and a t-test was applied to compare their IMDb ratings.
+The results showed that having a larger budget does not necessarily guarantee higher IMDb ratings. Many lower budget movies also received strong audience ratings.
 
-Machine Learning 🤖
+Budget vs Gross Revenue
+
+I also explored the relationship between budget and gross revenue.
+
+Compared to IMDb ratings, budget appeared to have a stronger relationship with revenue. In general, higher budget movies tended to generate more revenue overall.
+
+Hypothesis Testing
+
+Movies were divided into high budget and low budget groups based on the median budget value.
+
+A t-test was applied to compare IMDb ratings between these groups and evaluate whether the differences were statistically significant.
+
+Machine Learning
 
 A Linear Regression model was used to predict movie popularity using variables such as:
 
@@ -59,12 +63,12 @@ budget
 IMDb score
 runtime
 
-Model performance:
+The model performance was evaluated using:
 
-R² Score: ~0.36
-MSE: 21143358032.67
+R² Score
+Mean Squared Error (MSE)
 
-The results show that movie popularity can be partially explained by these variables, although many other external factors also affect success.
+Although the model captured some general trends, the results showed that movie success cannot be fully explained by budget and ratings alone.
 
 Visualizations 📈
 Score Distribution
@@ -75,8 +79,8 @@ Actual vs Predicted Values
 
 Conclusion
 
-The analysis showed that higher movie budgets do not always guarantee higher IMDb ratings. However, movies with larger budgets generally tend to generate more revenue.
+The project showed that movie budget alone is not enough to explain audience ratings and popularity.
 
-The IMDb enrichment process improved the dataset significantly and allowed more detailed analysis using ratings and vote counts.
+While higher budget movies generally earned more revenue, IMDb ratings depended on many additional factors beyond financial investment.
 
-Overall, the project suggests that movie success depends on many different factors, not only budget alone.
+Overall, the analysis demonstrated that movie success is influenced by a combination of budget, audience reception, and other external factors.
